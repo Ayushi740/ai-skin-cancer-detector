@@ -15,7 +15,8 @@ from disease_info import disease_details
 # ==============================
 # CONFIG
 # ==============================
-MODEL_PATH = "models/skin_cancer_model.h5"
+MODEL_PATH = MODEL_PATH = "models/skin_cancer_model_saved"
+
 EXPLAIN_DIR = "explainability"
 IMAGE_SIZE = (224, 224)
 
