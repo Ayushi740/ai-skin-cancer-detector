@@ -12,3 +12,4 @@ uvicorn[standard]
 python-multipart
 efficientnet
 seaborn
+opencv-python-headless
