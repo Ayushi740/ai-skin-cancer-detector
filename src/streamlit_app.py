@@ -4,6 +4,8 @@ import numpy as np
 import tensorflow as tf
 import os
 
+from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2
+
 from gradcam import generate_gradcam
 from report import generate_pdf_report
 
@@ -34,7 +36,10 @@ CLASS_NAMES = [
 # ==============================
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model(MODEL_PATH)
+    return tf.keras.models.load_model(
+        MODEL_PATH,
+        compile=False
+    )
 
 model = load_model()
 
