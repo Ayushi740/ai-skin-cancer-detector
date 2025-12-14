@@ -4,8 +4,9 @@ import numpy as np
 import tensorflow as tf
 import os
 
-from src.gradcam import generate_gradcam
-from src.report import generate_pdf_report
+from gradcam import generate_gradcam
+from report import generate_pdf_report
+
 
 from disease_info import disease_details
 
