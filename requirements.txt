@@ -13,3 +13,4 @@ python-multipart
 efficientnet
 seaborn
 opencv-python-headless
+fpdf
